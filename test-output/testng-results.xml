@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="7" total="19" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-28T19:57:06 IST" name="Suite" finished-at="2024-01-28T19:58:36 IST" duration-ms="90241">
+    <groups>
+    </groups>
+    <test started-at="2024-01-28T19:57:06 IST" name="Test" finished-at="2024-01-28T19:58:36 IST" duration-ms="90241">
+      <class name="SpringStarter.SpringStarter.DashBoardvalidation">
+        <test-method signature="getDetailsOfWidgetsOnDashBoard()[pri:0, instance:SpringStarter.SpringStarter.DashBoardvalidation@537f60bf]" started-at="2024-01-28T19:57:50 IST" name="getDetailsOfWidgetsOnDashBoard" finished-at="2024-01-28T19:57:52 IST" duration-ms="2261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDetailsOfWidgetsOnDashBoard -->
+      </class> <!-- SpringStarter.SpringStarter.DashBoardvalidation -->
+      <class name="SpringStarter.SpringStarter.DataProviderTest">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:SpringStarter.SpringStarter.DataProviderTest@51c668e3]" started-at="2024-01-28T19:56:58 IST" name="initDriver" finished-at="2024-01-28T19:57:06 IST" duration-ms="8125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="doLogin()[pri:1, instance:SpringStarter.SpringStarter.DataProviderTest@51c668e3]" started-at="2024-01-28T19:57:06 IST" name="doLogin" description="Login" finished-at="2024-01-28T19:57:26 IST" duration-ms="19946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="clickOnAdmin()[pri:0, instance:SpringStarter.SpringStarter.DataProviderTest@51c668e3]" started-at="2024-01-28T19:57:26 IST" name="clickOnAdmin" description="Clicking on admin depends upon login" finished-at="2024-01-28T19:57:41 IST" depends-on-methods="SpringStarter.SpringStarter.DataProviderTest.doLogin" duration-ms="14682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnAdmin -->
+        <test-method signature="getUserCountOnAdminPage()[pri:0, instance:SpringStarter.SpringStarter.DataProviderTest@51c668e3]" started-at="2024-01-28T19:57:41 IST" name="getUserCountOnAdminPage" description="Get Total user count and details for each user" finished-at="2024-01-28T19:57:50 IST" depends-on-methods="SpringStarter.SpringStarter.DataProviderTest.clickOnAdmin" duration-ms="8830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserCountOnAdminPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SpringStarter.SpringStarter.DataProviderTest@51c668e3]" started-at="2024-01-28T19:58:36 IST" name="tearDown" finished-at="2024-01-28T19:58:37 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SpringStarter.SpringStarter.DataProviderTest -->
+      <class name="SpringStarter.SpringStarter.CreateUser">
+        <test-method signature="clickOnAdmin()[pri:0, instance:SpringStarter.SpringStarter.CreateUser@5677323c]" started-at="2024-01-28T19:57:52 IST" name="clickOnAdmin" finished-at="2024-01-28T19:57:56 IST" duration-ms="4563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnAdmin -->
+        <test-method signature="clickOnAddUserButton()[pri:0, instance:SpringStarter.SpringStarter.CreateUser@5677323c]" started-at="2024-01-28T19:57:56 IST" name="clickOnAddUserButton" finished-at="2024-01-28T19:57:59 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.clickOnAdmin" duration-ms="2782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnAddUserButton -->
+        <test-method signature="selectOptionFromDropDown(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@5677323c]" started-at="2024-01-28T19:57:59 IST" name="selectOptionFromDropDown" data-provider="userStatusAndRole" finished-at="2024-01-28T19:58:06 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.clickOnAddUserButton" duration-ms="6802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User Role]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOptionFromDropDown -->
+        <test-method signature="selectOptionFromDropDown(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@5677323c]" started-at="2024-01-28T19:58:06 IST" name="selectOptionFromDropDown" data-provider="userStatusAndRole" finished-at="2024-01-28T19:58:12 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.clickOnAddUserButton" duration-ms="6123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Status]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOptionFromDropDown -->
+        <test-method signature="enterUserDetails(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@5677323c]" started-at="2024-01-28T19:58:12 IST" name="enterUserDetails" data-provider="UserFields" finished-at="2024-01-28T19:58:19 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.selectOptionFromDropDown" duration-ms="7289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Employee Name]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserDetails -->
+        <test-method signature="enterUserDetails(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@5677323c]" started-at="2024-01-28T19:58:19 IST" name="enterUserDetails" data-provider="UserFields" finished-at="2024-01-28T19:58:25 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.selectOptionFromDropDown" duration-ms="5467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Username]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserDetails -->
+        <test-method signature="enterUserDetails(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@5677323c]" started-at="2024-01-28T19:58:25 IST" name="enterUserDetails" data-provider="UserFields" finished-at="2024-01-28T19:58:31 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.selectOptionFromDropDown" duration-ms="5597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserDetails -->
+        <test-method signature="enterUserDetails(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@5677323c]" started-at="2024-01-28T19:58:31 IST" name="enterUserDetails" data-provider="UserFields" finished-at="2024-01-28T19:58:36 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.selectOptionFromDropDown" duration-ms="5770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Confirm Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserDetails -->
+      </class> <!-- SpringStarter.SpringStarter.CreateUser -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
