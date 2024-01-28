@@ -6,6 +6,7 @@
       <class name="SpringStarter.SpringStarter.DataProviderTest"/>
       <class name="SpringStarter.SpringStarter.DashBoardvalidation"/>
       <class name="SpringStarter.SpringStarter.CreateUser"/>
+      <class name="SpringStarter.SpringStarter.LeavePageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

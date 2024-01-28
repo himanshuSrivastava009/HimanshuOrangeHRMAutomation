@@ -6,8 +6,8 @@
       <class name="SpringStarter.SpringStarter.DashBoardvalidation">
         <methods>
           <include name="getDetailsOfWidgetsOnDashBoard"/>
-          <include name="tearDown"/>
           <include name="initDriver"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- SpringStarter.SpringStarter.DashBoardvalidation -->
     </classes>
