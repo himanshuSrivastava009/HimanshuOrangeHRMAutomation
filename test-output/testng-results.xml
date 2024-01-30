@@ -1,121 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="22" passed="13" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-29T00:22:22 IST" name="Suite" finished-at="2024-01-29T00:24:10 IST" duration-ms="108506">
+  <suite started-at="2024-01-29T21:31:36 IST" name="Default suite" finished-at="2024-01-29T21:31:36 IST" duration-ms="66">
     <groups>
     </groups>
-    <test started-at="2024-01-29T00:22:22 IST" name="Test" finished-at="2024-01-29T00:24:10 IST" duration-ms="108506">
-      <class name="SpringStarter.SpringStarter.LeavePageTest">
-        <test-method signature="applyLeave()[pri:0, instance:SpringStarter.SpringStarter.LeavePageTest@4d154ccd]" started-at="2024-01-29T00:23:48 IST" name="applyLeave" finished-at="2024-01-29T00:24:10 IST" duration-ms="22063" status="PASS">
+    <test started-at="2024-01-29T21:31:36 IST" name="Default test" finished-at="2024-01-29T21:31:36 IST" duration-ms="66">
+      <class name="SpringStarter.SpringStarter.TestListenersImpl">
+        <test-method signature="testStart()[pri:0, instance:SpringStarter.SpringStarter.TestListenersImpl@7fee8714]" started-at="2024-01-29T21:31:36 IST" name="testStart" finished-at="2024-01-29T21:31:36 IST" duration-ms="20" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertFalse(Assert.java:78)
+at org.testng.Assert.assertFalse(Assert.java:88)
+at SpringStarter.SpringStarter.TestListenersImpl.testStart(TestListenersImpl.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- applyLeave -->
-      </class> <!-- SpringStarter.SpringStarter.LeavePageTest -->
-      <class name="SpringStarter.SpringStarter.DashBoardvalidation">
-        <test-method signature="getDetailsOfWidgetsOnDashBoard()[pri:0, instance:SpringStarter.SpringStarter.DashBoardvalidation@18df8434]" started-at="2024-01-29T00:23:01 IST" name="getDetailsOfWidgetsOnDashBoard" finished-at="2024-01-29T00:23:04 IST" duration-ms="2351" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getDetailsOfWidgetsOnDashBoard -->
-      </class> <!-- SpringStarter.SpringStarter.DashBoardvalidation -->
-      <class name="SpringStarter.SpringStarter.DataProviderTest">
-        <test-method is-config="true" signature="initDriver()[pri:0, instance:SpringStarter.SpringStarter.DataProviderTest@6221a451]" started-at="2024-01-29T00:22:15 IST" name="initDriver" finished-at="2024-01-29T00:22:22 IST" duration-ms="7328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initDriver -->
-        <test-method signature="doLogin()[pri:1, instance:SpringStarter.SpringStarter.DataProviderTest@6221a451]" started-at="2024-01-29T00:22:22 IST" name="doLogin" description="Login" finished-at="2024-01-29T00:22:36 IST" duration-ms="14444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogin -->
-        <test-method signature="clickOnAdmin()[pri:0, instance:SpringStarter.SpringStarter.DataProviderTest@6221a451]" started-at="2024-01-29T00:22:36 IST" name="clickOnAdmin" description="Clicking on admin depends upon login" finished-at="2024-01-29T00:22:52 IST" depends-on-methods="SpringStarter.SpringStarter.DataProviderTest.doLogin" duration-ms="15653" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnAdmin -->
-        <test-method signature="getUserCountOnAdminPage()[pri:0, instance:SpringStarter.SpringStarter.DataProviderTest@6221a451]" started-at="2024-01-29T00:22:52 IST" name="getUserCountOnAdminPage" description="Get Total user count and details for each user" finished-at="2024-01-29T00:23:01 IST" depends-on-methods="SpringStarter.SpringStarter.DataProviderTest.clickOnAdmin" duration-ms="9230" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserCountOnAdminPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SpringStarter.SpringStarter.DataProviderTest@6221a451]" started-at="2024-01-29T00:24:11 IST" name="tearDown" finished-at="2024-01-29T00:24:11 IST" duration-ms="308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- SpringStarter.SpringStarter.DataProviderTest -->
-      <class name="SpringStarter.SpringStarter.CreateUser">
-        <test-method signature="clickOnAdmin()[pri:0, instance:SpringStarter.SpringStarter.CreateUser@65c7a252]" started-at="2024-01-29T00:23:04 IST" name="clickOnAdmin" finished-at="2024-01-29T00:23:08 IST" duration-ms="4278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnAdmin -->
-        <test-method signature="clickOnAddUserButton()[pri:0, instance:SpringStarter.SpringStarter.CreateUser@65c7a252]" started-at="2024-01-29T00:23:08 IST" name="clickOnAddUserButton" finished-at="2024-01-29T00:23:11 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.clickOnAdmin" duration-ms="3149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnAddUserButton -->
-        <test-method signature="selectOptionFromDropDown(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@65c7a252]" started-at="2024-01-29T00:23:11 IST" name="selectOptionFromDropDown" data-provider="userStatusAndRole" finished-at="2024-01-29T00:23:18 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.clickOnAddUserButton" duration-ms="7102" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User Role]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectOptionFromDropDown -->
-        <test-method signature="selectOptionFromDropDown(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@65c7a252]" started-at="2024-01-29T00:23:18 IST" name="selectOptionFromDropDown" data-provider="userStatusAndRole" finished-at="2024-01-29T00:23:24 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.clickOnAddUserButton" duration-ms="6114" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Status]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectOptionFromDropDown -->
-        <test-method signature="enterUserDetails(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@65c7a252]" started-at="2024-01-29T00:23:24 IST" name="enterUserDetails" data-provider="UserFields" finished-at="2024-01-29T00:23:31 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.selectOptionFromDropDown" duration-ms="7064" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Employee Name]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterUserDetails -->
-        <test-method signature="enterUserDetails(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@65c7a252]" started-at="2024-01-29T00:23:31 IST" name="enterUserDetails" data-provider="UserFields" finished-at="2024-01-29T00:23:37 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.selectOptionFromDropDown" duration-ms="5463" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Username]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterUserDetails -->
-        <test-method signature="enterUserDetails(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@65c7a252]" started-at="2024-01-29T00:23:37 IST" name="enterUserDetails" data-provider="UserFields" finished-at="2024-01-29T00:23:43 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.selectOptionFromDropDown" duration-ms="5671" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterUserDetails -->
-        <test-method signature="enterUserDetails(java.lang.String)[pri:0, instance:SpringStarter.SpringStarter.CreateUser@65c7a252]" started-at="2024-01-29T00:23:43 IST" name="enterUserDetails" data-provider="UserFields" finished-at="2024-01-29T00:23:48 IST" depends-on-methods="SpringStarter.SpringStarter.CreateUser.selectOptionFromDropDown" duration-ms="5771" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Confirm Password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterUserDetails -->
-      </class> <!-- SpringStarter.SpringStarter.CreateUser -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testStart -->
+      </class> <!-- SpringStarter.SpringStarter.TestListenersImpl -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

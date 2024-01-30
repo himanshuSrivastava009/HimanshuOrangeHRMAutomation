@@ -3,23 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SpringStarter.SpringStarter.DashBoardvalidation">
+      <class name="SpringStarter.SpringStarter.TestListenersImpl">
         <methods>
-          <include name="getDetailsOfWidgetsOnDashBoard"/>
-          <include name="initDriver"/>
+          <include name="testStart"/>
         </methods>
-      </class> <!-- SpringStarter.SpringStarter.DashBoardvalidation -->
-      <class name="SpringStarter.SpringStarter.DataProviderTest">
-        <methods>
-          <include name="validateUserDeletion"/>
-          <include name="doLogin"/>
-          <include name="perfromMultiSelction"/>
-          <include name="deletedSelectedUsers"/>
-          <include name="initDriver"/>
-          <include name="clickOnAdmin"/>
-          <include name="getUserCountOnAdminPage"/>
-        </methods>
-      </class> <!-- SpringStarter.SpringStarter.DataProviderTest -->
+      </class> <!-- SpringStarter.SpringStarter.TestListenersImpl -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

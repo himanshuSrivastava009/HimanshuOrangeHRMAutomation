@@ -1,13 +1,17 @@
 package SpringStarter.SpringStarter;
 
-import org.testng.annotations.Test;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import com.selenium.webelements.utilities.Listners;
 
 
+@Listeners(Listners.class)
 public class DashBoardvalidation extends BaseTestClass{
 
 	
@@ -26,6 +30,6 @@ public class DashBoardvalidation extends BaseTestClass{
 			System.out.println(i.getText());
 		});
 		
-		
+		screenshot.takeScreenshot(driver, "getDetailsOfWidgetsOnDashBoard");
 	}
 }
