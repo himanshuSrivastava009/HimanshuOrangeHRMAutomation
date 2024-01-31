@@ -12,19 +12,24 @@ import com.selenium.webelements.utilities.ScrollUpAndDownUtility;
 import com.selenium.webelements.utilities.TakeScreenshotUtility;
 import com.selenium.webelements.utilities.WebElementUtilities;
 
-public class BaseTestClass {
+public class ThreadLocalBaseTestClass {
 
-	static public WebDriver driver = null;
+	//static public WebDriver driver = null;
+	static public ChromeDriver driver = null;
 	static WebDriverWait wait = null;
 	static WebElementUtilities element = null;
 	static TakeScreenshotUtility screenshot = null;
 	static ScrollUpAndDownUtility scroll = null;
-	private static ThreadLocal<WebDriver> tl = new ThreadLocal<>();
+	private static ThreadLocal<ChromeDriver> tl = new ThreadLocal<>();
 	
+	static {
+		tl.set(new ChromeDriver());
+		
+	}
 	@BeforeSuite
 	public void initDriver() {
-		driver = new ChromeDriver();
-		tl.set(driver);
+		
+		//driver = new ChromeDriver();
 		driver = tl.get();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -32,7 +37,9 @@ public class BaseTestClass {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		screenshot = new TakeScreenshotUtility();
 		scroll = new ScrollUpAndDownUtility(driver);
-		tl.set(driver);
+		
+		
+		
 	}
 	
 	@AfterSuite
@@ -41,8 +48,5 @@ public class BaseTestClass {
 	}
 
 	
-	public static WebDriver getThreadLocalDriver() {
-		
-		return tl.get();
-	}
+	
 }

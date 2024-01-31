@@ -1,5 +1,7 @@
 package SpringStarter.SpringStarter;
 
+
+
 import java.time.Duration;
 import java.util.List;
 
@@ -9,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class DataProviderTest extends BaseTestClass{
+ public class OrangeHRMParallelExecutionUsingThreadLocal extends ThreadLocalBaseTestClass{
 
 	static By username = By.xpath("//input[@name='username']");
 	static By password = By.xpath("//input[@name='password']");
@@ -42,6 +44,7 @@ public class DataProviderTest extends BaseTestClass{
 	@Test(description = "Login", priority = 1)
 	public void doLogin(){
 
+		
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -122,3 +125,4 @@ public class DataProviderTest extends BaseTestClass{
 		}
 	}
 }
+
