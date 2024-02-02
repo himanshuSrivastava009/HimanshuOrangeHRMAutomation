@@ -1,49 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="8" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-31T07:55:16 IST" name="Suite" finished-at="2024-01-31T07:56:14 IST" duration-ms="58789">
+  <suite started-at="2024-02-02T14:32:01 IST" name="Default suite" finished-at="2024-02-02T14:32:01 IST" duration-ms="62">
     <groups>
     </groups>
-    <test started-at="2024-01-31T07:55:16 IST" name="Test1" finished-at="2024-01-31T07:55:43 IST" duration-ms="27384">
-      <class name="SpringStarter.SpringStarter.OpenGooglePage">
-        <test-method signature="launchGoogle()[pri:0, instance:SpringStarter.SpringStarter.OpenGooglePage@c1fca1e]" started-at="2024-01-31T07:55:16 IST" name="launchGoogle" finished-at="2024-01-31T07:55:43 IST" duration-ms="27268" status="PASS">
+    <test started-at="2024-02-02T14:32:01 IST" name="Default test" finished-at="2024-02-02T14:32:01 IST" duration-ms="62">
+      <class name="SpringStarter.SpringStarter.TetsingRetryAnalyzer">
+        <test-method signature="doTest()[pri:0, instance:SpringStarter.SpringStarter.TetsingRetryAnalyzer@56cdfb3b]" started-at="2024-02-02T14:32:01 IST" name="doTest" finished-at="2024-02-02T14:32:01 IST" duration-ms="24" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertFalse(Assert.java:78)
+at org.testng.Assert.assertFalse(Assert.java:88)
+at SpringStarter.SpringStarter.TetsingRetryAnalyzer.doTest(TetsingRetryAnalyzer.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchGoogle -->
-      </class> <!-- SpringStarter.SpringStarter.OpenGooglePage -->
-    </test> <!-- Test1 -->
-    <test started-at="2024-01-31T07:55:16 IST" name="Test2" finished-at="2024-01-31T07:55:48 IST" duration-ms="32479">
-      <class name="SpringStarter.SpringStarter.Guru99Demo">
-        <test-method signature="testScrollUpAndDown()[pri:0, instance:SpringStarter.SpringStarter.Guru99Demo@2a551a63]" started-at="2024-01-31T07:55:16 IST" name="testScrollUpAndDown" finished-at="2024-01-31T07:55:48 IST" duration-ms="32371" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScrollUpAndDown -->
-      </class> <!-- SpringStarter.SpringStarter.Guru99Demo -->
-    </test> <!-- Test2 -->
-    <test started-at="2024-01-31T07:55:16 IST" name="Test3" finished-at="2024-01-31T07:56:14 IST" duration-ms="58789">
-      <class name="SpringStarter.SpringStarter.OrangeHRMParallelExecutionUsingThreadLocal">
-        <test-method is-config="true" signature="initDriver()[pri:0, instance:SpringStarter.SpringStarter.OrangeHRMParallelExecutionUsingThreadLocal@2d35442b]" started-at="2024-01-31T07:55:15 IST" name="initDriver" finished-at="2024-01-31T07:55:16 IST" duration-ms="628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initDriver -->
-        <test-method signature="doLogin()[pri:1, instance:SpringStarter.SpringStarter.OrangeHRMParallelExecutionUsingThreadLocal@2d35442b]" started-at="2024-01-31T07:55:16 IST" name="doLogin" description="Login" finished-at="2024-01-31T07:55:54 IST" duration-ms="38514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogin -->
-        <test-method signature="clickOnAdmin()[pri:0, instance:SpringStarter.SpringStarter.OrangeHRMParallelExecutionUsingThreadLocal@2d35442b]" started-at="2024-01-31T07:55:54 IST" name="clickOnAdmin" description="Clicking on admin depends upon login" finished-at="2024-01-31T07:56:04 IST" depends-on-methods="SpringStarter.SpringStarter.OrangeHRMParallelExecutionUsingThreadLocal.doLogin" duration-ms="9724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnAdmin -->
-        <test-method signature="getUserCountOnAdminPage()[pri:0, instance:SpringStarter.SpringStarter.OrangeHRMParallelExecutionUsingThreadLocal@2d35442b]" started-at="2024-01-31T07:56:04 IST" name="getUserCountOnAdminPage" description="Get Total user count and details for each user" finished-at="2024-01-31T07:56:14 IST" depends-on-methods="SpringStarter.SpringStarter.OrangeHRMParallelExecutionUsingThreadLocal.clickOnAdmin" duration-ms="10426" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserCountOnAdminPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SpringStarter.SpringStarter.OrangeHRMParallelExecutionUsingThreadLocal@2d35442b]" started-at="2024-01-31T07:56:14 IST" name="tearDown" finished-at="2024-01-31T07:56:15 IST" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- SpringStarter.SpringStarter.OrangeHRMParallelExecutionUsingThreadLocal -->
-    </test> <!-- Test3 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- doTest -->
+      </class> <!-- SpringStarter.SpringStarter.TetsingRetryAnalyzer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

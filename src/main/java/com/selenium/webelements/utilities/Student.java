@@ -3,6 +3,8 @@ package com.selenium.webelements.utilities;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.testng.Assert;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -70,7 +72,7 @@ public class Student {
 		return "Student [id=" + id + ", name=" + name + ", collegeName=" + collegeName + "]";
 	}
 
-	public static void main(String[] args) throws JsonProcessingException {
+	public static void main(String[] args) throws JsonProcessingException, StudentCustomException {
 		ArrayList<Student> al = new ArrayList<>();
 		
 		al.add(new Student("1","Himanshu","DSI")); 
@@ -79,14 +81,22 @@ public class Student {
 		StudentInfo st = new StudentInfo();
 		st.setStudents(al);
 		
+		
 		ObjectMapper mapper = new ObjectMapper();
 		String val  = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(st);
 		System.out.println(val.toString());
 		
 		ObjectMapper mapper1 = new ObjectMapper();
 		StudentInfo readValue = mapper1.readValue(val, StudentInfo.class);
-		System.out.println(readValue.getStudents().get(0).getId());
-		
+		System.out.println(readValue.getStudents().get(0).getName());
+		Assert.assertEquals(readValue.getStudents().get(0).getName(), al.get(0).getName());
+		try {
+		throw new StudentCustomException("Invalid Student Name");
+		}
+		catch(Exception e) {
+			
+			System.out.println("Student names did not match");
+		}
 		
 	}
 }
