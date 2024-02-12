@@ -52,10 +52,10 @@ public class RestAssuredExample {
 //		.statusCode(201);
 		
 		
-		 for (Person user : list) {
-	            System.out.println("User: " + user.getName());
-	        }
-		
+//		 for (Person user : list) {
+//	            System.out.println("User: " + user.getName());
+//	        }
+//		
 		
 	}
 }

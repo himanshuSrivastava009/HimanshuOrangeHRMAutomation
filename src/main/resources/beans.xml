@@ -5,6 +5,16 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-<bean id="President" class="SpringStarter.SpringStarter.President"></bean>
-<bean id="ChromeDriver" class="org.openqa.selenium.chrome.ChromeDriver"></bean>
-</beans>
+<!--  --><bean id="President" class="SpringStarter.SpringStarter.President"></bean>
+<!-- <bean id="ChromeDriver" class="org.openqa.selenium.chrome.ChromeDriver"></bean>
+ -->
+ <bean id="cat" class="LearningDependencyInjection.Cat">
+ <constructor-arg name="name" value="Tom"></constructor-arg>
+ <constructor-arg name="type" value="Persian Cat"></constructor-arg>
+ </bean>
+ <bean id="tiger" class="LearningDependencyInjection.Tiger">
+ <constructor-arg name="name" value="Simba"></constructor-arg>
+ <constructor-arg name="type" value="Bengal Tiger"></constructor-arg>
+ </bean>
+ 
+ </beans>
